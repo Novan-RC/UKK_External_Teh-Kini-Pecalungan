@@ -1,0 +1,561 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: bisque;
+    width: 100%;
+    height: 100px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 80px;
+    margin: 10px;
+}
+
+nav ul {
+    display:flex;
+    gap: 40px;
+    text-decoration:none;
+    list-style: none;
+    padding-right: 30px;
+}
+
+nav ul li a {
+    text-decoration:none;
+    color: black;
+}
+
+#home {
+    background-color:rgb(250, 239, 223);
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#product h3 {
+    padding: 20px;
+}
+
+.p1 {
+    display: flex;
+    align-items: center;
+}
+
+.pp1 {
+    width: 110px;
+    margin-left: 300px;
+}
+
+.p2 {
+    display: flex;
+    align-items: center;
+}
+
+.pp2 {
+    width: 110px;
+    margin-left: 100px;
+}
+
+.p3 {
+    display: flex;
+    align-items: center;
+}
+
+.pp3 {
+    width: 110px;
+    margin-left: 300px;
+}
+
+.hero {
+    text-align: center;
+    padding: 10px;
+    margin-top: 55px;
+}
+
+.hero-img {
+    width: 700px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px black;
+}
+
+.btn-order {
+    text-align: center;
+    background-color: rgb(84, 144, 255);
+    width: 150px;
+    height: 30px;
+    border-radius: 30px;
+    place-self: center;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-order:hover {
+    transform:scale(0.98)
+}
+
+#testimonials {
+    text-align: center;
+    background-color: rgba(229, 228, 228, 0.867);
+    width: 100%;
+    height: 300px;
+}
+
+#testimonials h3 {
+    padding-top: 30px;
+}
+
+.testimonial {
+    display: flex;
+    justify-content: space-around;
+}
+
+.ryan-img {
+    width: 110px;
+}
+
+.cika-img {
+    width: 90px;
+    margin-top: 15px;
+}
+
+#contact {
+   
+    height: 250px;
+    place-self: center;
+}
+
+form {
+    margin-top: 30px;
+    text-align: center;
+}
+
+form textarea {
+    width: 600px;
+    height: 150px;
+    border: 1px solid black;
+    display:block;
+    padding: 10px;
+}
+
+form h4 {
+    border: 1px solid black;
+    width: 600px;
+    place-self:center;
+}
+
+.btn-mail {
+    text-align: end;
+    border: 1px solid black;
+    width: 600px;
+    place-self: center;
+}
+
+.btn-mail button {
+    margin: 5px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#footer {
+    text-align: center;
+    background-color: rgb(54, 54, 54);
+    height: 100px;
+}
+
+.icon {
+    width: 35px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+#footer p {
+    color:rgb(119, 120, 120)
+}
+
+@media (max-width:1530px) {
+    .hero-img {
+        width: 600px;
+    }
+
+    .hero {
+        margin-right: 60px;
+    }
+
+    #home {
+        font-size: 10px;
+    }
+}
+
+@media (max-width:1275px) {
+    .hero-img{
+        width: 500px;
+    }
+
+    #home {
+        height: 600px;
+    }
+
+    .pp1 {
+        width: 80px;
+        margin-left: 200px;
+    }
+
+    .pp2 {
+        width: 80px;
+        margin-left: 50px;
+    }
+
+    .pp3 {
+        width: 80px;
+        margin-left: 200px;
+    }
+
+    nav a{
+        font-size: 11px;
+    }
+}
+
+@media (max-width:1100px) {
+    .hero-img {
+        width: 400px;
+    }
+
+    .logo h1 {
+        font-size: 17px;
+    }
+
+    .logo-img {
+        width: 65px;
+    }
+}
+
+@media (max-width: 1080px) {
+
+    #home {
+        height: 550px;
+    }
+    .hero {
+        margin-right: 0;
+    }
+
+   
+
+    .pp1 {
+        margin-left: 100px;
+    }
+
+    .pp2 {
+        margin-left: 0;
+    }
+
+    .pp3 {
+        margin-left: 100px;
+    }
+
+    .logo h1 {
+        font-size: 18px;
+    }
+
+    .logo-img {
+        width: 60px;
+    }
+
+    nav a {
+        font-size: 10px;
+    }
+}
+
+
+
+@media (max-width:768px) {
+
+    #home {
+        height: 400px;
+    }
+
+    header {
+        height: 40px;
+    }
+
+    .logo h1 {
+        font-size: 10px;
+    }
+
+    .logo-img {
+        width: 30px;
+    }
+
+    nav ul {
+        font-size: 7px;
+        gap: 20px;
+        padding-right: 10px;
+    }
+
+    nav a {
+        font-size: 5.5px;
+    }
+
+    #product {
+        place-self: center;
+    }
+
+    #product h3 {
+        font-size: 10px;
+        
+        padding: 0;
+        margin: 0;
+    }
+
+    .pp1 {
+        width: 70px;
+        margin-left: 90px;
+    }
+
+    .dp {
+        font-size: 5px;
+        padding-top: 0;
+        padding-bottom: 20px;
+    }
+
+    .pp2 {
+        width: 70px;
+        margin-left: 0px;
+    }
+
+    .pp3 {
+        width: 70px;
+        margin-left: 90px;
+    }
+
+    .hero {
+        font-size: 8px;
+        margin-top:10px;
+    }
+
+    .hero-img {
+        width: 300px;
+        border-radius: 10px;
+    }
+
+    .btn-order {
+        width: 80px;
+        height: 20px;
+        margin-bottom: 30px;
+        font-size: 8px;
+    }
+
+    #testimonials {
+        height: 100px;
+    }
+
+    #testimonials h3 {
+        font-size: 8px;
+        padding-top: 8px;
+    }
+
+    .ryan-img{
+        width: 40px;
+    }
+
+    .cika-img{
+        width: 25px;
+        
+    }
+
+    .ryan {
+        font-size: 5px;
+    }
+
+    .cika {
+        font-size: 5px;
+    }
+
+    form {
+        transform: scale(0.5);
+        margin: 0;
+    }
+
+    #contact {
+        height: 200px;
+    }
+
+    .icon {
+        width: 15px;
+
+    }
+
+    #footer p {
+        font-size: 8px;
+    }
+    #footer {
+        height: 60px;
+    }
+
+}
+
+@media (max-width:480px) {
+    #home {
+        flex-direction: column-reverse;
+        height: 840px;
+    }
+
+    header {
+        height: 40px;
+    }
+
+    .logo h1 {
+        font-size: 10px;
+    }
+
+    .logo-img {
+        width: 30px;
+    }
+
+    nav ul {
+        font-size: 4px;
+        gap: 20px;
+        padding-right: 10px;
+    }
+
+    nav a {
+        font-size: 4.5px;
+    }
+
+    #product {
+        place-self: center;
+    }
+
+    #product h3 {
+        font-size: 10px;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        border: 0;
+    }
+
+    .pp1 {
+        width: 70px;
+        margin-left: 0px;
+    }
+
+    .dp {
+        font-size: 5px;
+        padding-top: 0;
+        padding-bottom: 20px;
+    }
+
+    .pp2 {
+        width: 70px;
+        margin-left: 0px;
+    }
+
+    .pp3 {
+        width: 70px;
+        margin-left: 0px;
+    }
+
+    .p1 {
+        display: block;
+        text-align: center;
+    }
+
+    .p2 {
+        display: block;
+        text-align: center;
+    }
+
+    .p3 {
+        display: block;
+        text-align: center;
+    }
+
+    .hero {
+        font-size: 7px;
+        
+    }
+
+    #hero {
+        border: 1px solid black;
+        border-top: 1px;
+        border-right: 1px;
+        border-left: 1px;
+    }
+
+    .hero-img {
+        width: 200px;
+        border-radius: 10px;
+    }
+
+    .btn-order {
+        width: 80px;
+        height: 20px;
+        margin-bottom: 30px;
+        font-size: 8px;
+    }
+
+    #testimonials {
+        height: 100px;
+    }
+
+    #testimonials h3 {
+        font-size: 8px;
+        padding-top: 8px;
+    }
+
+    .ryan-img{
+        width: 40px;
+    }
+
+    .cika-img{
+        width: 25px;
+        
+    }
+
+    .ryan {
+        font-size: 5px;
+    }
+
+    .cika {
+        font-size: 5px;
+    }
+
+    form {
+        transform: scale(0.5);
+        margin: 0;
+    }
+
+    #contact {
+        height: 200px;
+    }
+
+    .icon {
+        width: 15px;
+
+    }
+
+    #footer p {
+        font-size: 8px;
+    }
+    #footer {
+        height: 60px;
+    }
+}
+
